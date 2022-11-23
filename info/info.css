@@ -1,0 +1,12 @@
+
+@import '../css/responsivity.css';
+@import '../css/header-footer.css';
+@import '../cultura/cultura.css';
+
+.fundo {
+    background: url(https://s2.static.brasilescola.uol.com.br/be/2021/10/mapa-grecia.jpg) no-repeat center top;
+    background-size: cover;
+    height:100vh;   
+    
+}
+

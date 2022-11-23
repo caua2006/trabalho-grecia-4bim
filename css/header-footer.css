@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #0d192b59;
+    height: 12vh;
+}
+header:hover {
+    background: #0d192bad;
+}
+.nav-list {
+    position: absolute;
+    background: #0d192bb7;
+    top:12vh;
+    right: 0;
+    width: 50vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    transform: translateX(100%);
+    z-index: 1;
+    transition: transform 0.3s ease-in;
+    display: none;
+
+}
+.nav-list.active {
+    transform: translateX(0);  
+    
+    display: flex;
+    transition: transform 0.3s ease-in;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-left: 0;
+    opacity: 0;
+}
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    
+
+}
+.menu-mobile {
+    cursor: pointer;
+}
+.menu-mobile div {
+    width: 3.2rem;
+    height: 0.2rem;
+    background: #fff;
+    margin: 0.8rem;
+}
+
+header img {
+    width:7rem;
+}
+
+.intro-his {
+    background: #0d192b59;
+    color: #ffffff;
+    padding: 3rem;
+    text-align: left;
+    height: 87.9vh;
+}
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+.intro-his h2 {
+    font-size: 2rem;
+}
+/* Footer da pagina */
+footer {
+    background: #0d192b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(151, 151, 151);
+    font-family: 'Red Hat Display', sans-serif;
+}
+footer h2 {
+    font-size: 1.8rem;
+}
+footer p {
+    font-size: 1.5rem;
+}
+footer img {
+    padding: 2.5rem;
+    width: 20rem;
+}
+#grecia-old div img:hover {
+    transform: scale(1.1);
+}
+#grecia-old div img,
+#grecia-new img,
+#grecia-old img {
+    transition: transform .3s ease-in;
+}
+
+/* AS ANIMAÇÕES DA PAGINA */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-mobile.active .l1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+  
+.menu-mobile.active .l2 {
+    opacity: 0;
+}
+  
+.menu-mobile.active .l3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="down"] {
+transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"] {
+transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"] {
+transform: translate3d(50px ,0 ,0);
+}
+
+[data-anime].animate {
+opacity: 1;
+transform: translate3d(0 ,0 ,0);
+}

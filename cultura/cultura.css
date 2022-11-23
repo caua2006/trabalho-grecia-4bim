@@ -1,6 +1,13 @@
 
-@import './css/responsivity.css';
-@import './css/header-footer.css';
+@import '../css/responsivity.css';
+@import '../css/header-footer.css';
+
+.fundo {
+    background: url(https://images.memphistours.com/large/1220258310_monument-3388941_1920.jpg) no-repeat center top;
+    background-size: cover;
+    height:100vh;   
+    
+}
 
 .link {
     display: flex;
@@ -11,7 +18,7 @@
     gap: 1rem;
 }
 .link h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #0555ce;
     text-align: center;
     text-transform: uppercase;
@@ -55,12 +62,18 @@
     list-style: none;
 }
 #grecia-old div img,
-#grecia-new img {
+#grecia-new img,
+#grecia-old img {
     width: 100%;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.548);
     border-radius: 10px;
     margin-block: 2.5rem;
+    transition: transform .3s ease-in;
 }
+#grecia-old div img:hover {
+    transform: scale(1.1);
+}
+
 #grecia-new h2 {
     font-size: 3.5rem;
     text-align: center;
