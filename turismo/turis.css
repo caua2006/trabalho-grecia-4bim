@@ -4,12 +4,9 @@
 @import '../cultura/cultura.css';
 
 .fundo {
-    background: url(https://s2.static.brasilescola.uol.com.br/be/2021/10/mapa-grecia.jpg) no-repeat center top;
+    background: url(https://v9v6u8a5.stackpathcdn.com/wp-content/uploads/2020/11/grecia-ilha-turismo.jpg) no-repeat center top;
     background-size: cover;
     height:100vh;   
     
-}
-.esquerda-desktop ul {
-    margin-bottom: 2rem;
 }
 

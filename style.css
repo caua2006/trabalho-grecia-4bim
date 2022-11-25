@@ -1,7 +1,17 @@
 
 @import './css/responsivity.css';
 @import './css/header-footer.css';
-
+.fundo {
+    background: url(https://dicadagrecia.com.br/wp-content/uploads/2020/03/santorini-grecia-1.jpg) no-repeat center top;
+    background-size: cover;
+    height:100vh;   
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .link {
     display: flex;
     flex-direction: column;
@@ -21,51 +31,51 @@
     text-decoration: none;
     color: #0752c2;
 }
-.link a:hover{
+.card button:hover {
     color: #0555cea4;
     cursor: pointer;
 }
-#grecia-old div,
-#grecia-new div,
-#grecia-new {
-    padding: 2rem;
+
+.card {
+    max-width: 32rem;
+    border-bottom:5px solid #0555ce ;
+    border-left: 5px solid #0555ce;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.548);
+    text-align: center;
 }
-#grecia-old h2 {
-    font-size: 4rem;
+.card div {
+    padding: 2.5rem;
+}
+.card h2 {
+    font-size: 2.5rem;
+    color: #0555ce;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 900;
 }
-#grecia-old div h2 {
-    font-size: 2.5rem;
-    text-transform: none;
-    color: #0555ce;
-    font-family: 'Red Hat Display', sans-serif;
-}
-#grecia-old div p, 
-#grecia-new p {
+.card p {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    text-align: justify;
 }
-#grecia-old div ul {
-    font-size: 1.5rem;
-    text-align: justify;
-    list-style: none;
-}
-#grecia-old div img,
-#grecia-new img {
+.card img {
     width: 100%;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.548);
+    height: 40rem;
+    border-radius: 10px 10px 0 0;
+}
+.card button {
+    padding-block: 1rem;
+    width: 10rem;
+    
+   
+    border: none;
+    background: #0555ce;
     border-radius: 10px;
-    margin-block: 2.5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
 }
-#grecia-new h2 {
-    font-size: 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 900;
+.card button a {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.125rem;
+    text-decoration: none;
 }
-

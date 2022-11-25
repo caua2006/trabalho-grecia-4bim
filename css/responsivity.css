@@ -49,15 +49,21 @@
     #grecia-old img {
         transition: transform .3s ease-in;
     }
-    .direita-desktop, 
-    .esquerda-desktop {
+    .direita-desktop {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         
     }
+    
+    .esquerda-desktop {
+        display: flex;
+        align-items: center;
+        
+    }
     #grecia-old .direita-desktop div h2,
-    main #grecia-new .direita-desktop div h2 {
+    main #grecia-new .direita-desktop div h2,
+    #grecia-old .esquerda-desktop div h2 {
         font-size: 4rem;
         margin-bottom: 5rem;
     }
@@ -85,16 +91,12 @@
         width: fit-content;
     }
     
-    #grecia-old .esparta-atenas div:nth-of-type(1) h2 {
-        font-size: 3rem;
-        color: #880000;
-        font-weight: 700;
-    }
-    #grecia-old .esparta-atenas div:nth-of-type(2) h2 {
-        font-size: 3rem;
-        color: #028845;
-        font-weight: 700;
-    }
     
-
+    .cards {
+        max-width: 71rem;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
 }
